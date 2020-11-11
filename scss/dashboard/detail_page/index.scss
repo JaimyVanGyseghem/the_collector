@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$primary-color: #3195F7;
+
+h1,
+h2,
+h3 {
+    font-family: "rockwell";
+    font-weight: 500;
+}
+
+
+body {
+    font-family: "Source Sans Pro";
+    background-color: $primary-color;
+}
+
+.profile {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    & div:first-of-type {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid $primary-color;
+        margin-right: 8px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & p {
+        font-weight: bold;
+    }
+}
+
+.dashboardCollectie {
+    display: flex;
+    z-index: 1;
+    nav {
+        width: 150px;
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+
+        & h1 {
+            margin-bottom: 100px;
+        }
+
+        .collectionImage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & div {
+                display: inline-block;
+                height: 70px;
+                width: 70px;
+                border-radius: 100%;
+                text-align: center;
+                overflow: hidden;
+                margin-bottom: 20px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+    }
+
+    & .dashboard {
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 100%;
+        height: 100vh;
+        padding-left: 50px;
+        position: relative;
+
+        & .addItem {
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            margin-top: 250px;
+            border: 2px $primary-color solid;
+            border-radius: 50px;
+            padding: 40px 0px;
+            display: none;
+            &.addItemVision {
+                display: block;
+            }
+            & form {
+                & input {
+                    margin-bottom: 20px;
+                    margin-left: 30px;
+                }
+
+                & button {
+                    margin-left: 30px;
+                }
+            }
+           
+        }
+
+        & .welcome {
+            margin-top: 50px;
+            width: 98%;
+
+            & .head {
+                & a {
+                    display: flex;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                img {
+                    width: 30px;
+                    margin-right: 10px;
+                }
+            }
+
+            & hr {
+                margin-top: 10px;
+                margin-left: -20px;
+            }
+
+            & p {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+
+        & .filter {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+
+            & .buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    font-size: 16px;
+                    padding: 5px 20px;
+                    margin-right: 15px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    transition: 3s;
+
+                    &:nth-of-type(1) {
+                        background-color: #A5FFAE;
+                    }
+
+                    &:nth-of-type(2) {
+                        background-color: #FF9090;
+                    }
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            & .filterOptions {
+
+                & form {
+                    display: flex;
+                    margin-right: 30px;
+
+                    & input {
+                        border: none;
+                        border-bottom: #3195F7 solid 2px;
+                        text-align: center;
+                        width: 200px;
+
+                        &:focus {
+                            outline: none;
+                            text-align: left;
+                            border-bottom: #3195F7 solid 3px;
+                        }
+
+                    }
+                }
+            }
+
+            & div {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            & img {
+                width: 40px;
+                color: $primary-color;
+                margin-right: 40px;
+            }
+        }
+
+    }
+
+    .collections {
+        margin-top: 50px;
+        display: flex;
+    
+        & .items {
+            background-color: #F5F4F4;
+            width: 15%;
+            margin-right: 20px;
+            border-radius: 20px;
+    
+            & .itemHead {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                & p {
+                    font-weight: bold;
+                }
+    
+                & div {
+                    display: inline-block;
+                    height: 100px;
+                    width: 92%;
+                    text-align: center;
+                    overflow: hidden;
+                    border-radius: 20px;
+                    margin-top: 8px;
+                    margin-bottom: 5px;
+                    position: relative;
+    
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        object-fit: cover;
+                    }
+                }
+            }
+    
+            & .prices {
+                display: flex;
+                justify-content: space-between;
+                width: 89%;
+                margin: 30px auto;
+                & div:nth-of-type(3) {
+                    text-align: right;
+                }
+
+                & div:nth-of-type(2) {
+                    height: 50px;
+                    width: 2px;
+                    background: $primary-color;
+                }
+
+                & div p {
+                    &:first-of-type{
+                        margin-bottom: 5px;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+    }
+}

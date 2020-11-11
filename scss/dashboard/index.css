@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "rockwell";
+  font-weight: 500;
+}
+
+body {
+  font-family: "Source Sans Pro";
+  background-color: #3195F7;
+}
+
+.profile {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile div:first-of-type {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #3195F7;
+  margin-right: 8px;
+}
+
+.profile div:first-of-type img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile p {
+  font-weight: bold;
+}
+
+.dashboardCollectie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboardCollectie nav {
+  width: 150px;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.dashboardCollectie nav h1 {
+  margin-bottom: 200px;
+}
+
+.dashboardCollectie nav div {
+  margin-top: 50px;
+}
+
+.dashboardCollectie nav div h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.dashboardCollectie nav div div {
+  cursor: pointer;
+}
+
+.dashboardCollectie .dashboard {
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%;
+  height: 100vh;
+  padding-left: 50px;
+}
+
+.dashboardCollectie .dashboard .welcome {
+  margin-top: 50px;
+  width: 98%;
+}
+
+.dashboardCollectie .dashboard .welcome hr {
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.dashboardCollectie .dashboard .welcome p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dashboardCollectie .dashboard .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 35px;
+}
+
+.dashboardCollectie .dashboard .filter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboardCollectie .dashboard .filter img {
+  width: 40px;
+  color: #3195F7;
+  margin-right: 40px;
+}
+
+.collection {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.collection .item .linked {
+  background-color: #F5F4F4;
+  width: 95%;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.collection .item .linked h2 {
+  font-weight: bold;
+}
+
+.collection .item .linked div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.collection .item .linked img {
+  height: 70px;
+  width: 70px;
+  margin-left: 15px;
+  border-radius: 50%;
+  padding: 15px 0px;
+  margin-right: 20px;
+}
+
+.collection .item .linked .price {
+  margin-right: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #70E293;
+}
+
+.deleteCollection {
+  position: absolute;
+  left: 95%;
+  top: -110%;
+  background-color: white;
+  border: 3px #3195F7 solid;
+  border-radius: 20px;
+  text-align: left;
+  display: none;
+}
+
+.deleteCollection form input {
+  margin: 15px 10px;
+}
+
+.deleteCollection form input:nth-of-type(2) {
+  width: 90%;
+}
+
+.deleteCollection form button {
+  margin-left: 15px;
+}
+
+.deleteCollection form button {
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.addCollection {
+  position: absolute;
+  left: 95%;
+  top: -110%;
+  background-color: white;
+  border: 3px #3195F7 solid;
+  border-radius: 20px;
+  text-align: left;
+  display: none;
+}
+
+.addCollection form input {
+  margin: 15px 10px;
+}
+
+.addCollection form input:nth-of-type(2) {
+  width: 90%;
+}
+
+.addCollection form button {
+  margin-left: 15px;
+}
+
+.addCollection form button {
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.relative {
+  position: relative;
+}
+
+.addCollectionVision {
+  display: block;
+}
+/*# sourceMappingURL=index.css.map */

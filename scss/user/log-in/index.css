@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "rockwell";
+  font-weight: 500;
+}
+
+body {
+  font-family: "Source Sans Pro";
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .close {
+  margin-left: 15px;
+  margin-top: 15px;
+  color: #57ACFF;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.container .form {
+  width: 60%;
+  height: 100vh;
+  position: relative;
+}
+
+.container .form .alert {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 150px;
+  text-align: center;
+  color: red;
+  border: 1px solid red;
+  width: 250px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.container .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.container .form form div {
+  margin-top: 200px;
+}
+
+.container .form form div h1 {
+  color: #57ACFF;
+}
+
+.container .form form div p {
+  width: 100%;
+  text-align: center;
+}
+
+.container .form form .link {
+  text-align: center;
+}
+
+.container .form form .link a {
+  color: #ffb400;
+  text-decoration: none;
+}
+
+.container .form form .link a:hover {
+  text-decoration: underline;
+}
+
+.container .form form p {
+  margin-top: 10px;
+  width: 60%;
+}
+
+.container .form form p input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #57ACFF;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.container .form form p input::-webkit-input-placeholder {
+  color: black;
+}
+
+.container .form form p input:-ms-input-placeholder {
+  color: black;
+}
+
+.container .form form p input::-ms-input-placeholder {
+  color: black;
+}
+
+.container .form form p input::placeholder {
+  color: black;
+}
+
+.container .form form p input:focus {
+  outline: none;
+}
+
+.container .form form button {
+  background-color: #57ACFF;
+  color: white;
+  border: 1px solid #57ACFF;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.container .form form button:hover {
+  background-color: #ffb400;
+  border: 1px solid #ffb400;
+}
+
+.container .info {
+  background-color: #57ACFF;
+  height: 100vh;
+  color: white;
+  width: 40%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=index.css.map */
